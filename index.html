@@ -79,7 +79,24 @@
 
     </iframe>
     <script>
-
+        const map = {
+            'Georgia export of construction output': 'Georgia export of construction output.html', 
+            'Georgia export 2007-2020 (in-1000-USD)': 'Georgia-Exports-2007-2020-in-1000-USD.html',              
+            'Georgia import of packaging output': 'Georgia import of packaging output.html',
+            'Georgia export of furniture input': 'Georgia export of furniture input.html',     
+            'Georgia export and imports 2007-2020 (in-1000-USD)': 'Georgia-Exports-and-Imports-2007-2020-in-1000-USD.html',  
+            'Georgia import of protective output': 'Georgia import of protective output.html',
+            'Georgia export of furniture output': 'Georgia export of furniture output.html',    
+            'Georgia import of construction output': 'eorgia import of construction output.html',              
+            'Georgia import 2007-2020 (in-1000-USD)': 'Georgia-Imports-2007-2020-in-1000-USD.html',
+            'Georgia export of ict output': 'Georgia export of ict output.html',          
+            'Georgia import of furniture input': 'eorgia import of furniture input.html',
+            'Georgia export of packaging output': 'Georgia export of packaging output.html',    
+            'Georgia import of furniture output': 'eorgia import of furniture output.html',
+            'Georgia export of protective output': 'Georgia export of protective output.html',   
+            'Georgia import of ict output': 'eorgia import of ict output.html'
+        }
+        document.getElementsByTagName("select")[0].onchange = (e) => document.getElementsByTagName("iframe")[0].setAttribute('src', "https://iset-data-center.github.io/vca-data-visualization/" + map[e.target.value])
     </script>
 </body>
 </html>
